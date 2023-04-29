@@ -1,0 +1,29 @@
+<h1>Flopbuster</h1>
+
+<div class="jumbotron d-flex m-1 mb-4" >
+  <div class="p-2 col-6" >
+    We have all the best flops in the business!
+    <br>
+    Choose a flop to rent
+  </div>
+
+  
+  <div class="card p-2 col-6" >
+    <!--Exercise:
+      Make this a component
+      send in the data for # of movies rented, and list of titles
+      BONUS: hook up the rent buttons below
+     -->
+    <app-rental-list></app-rental-list>
+  </div>
+  
+</div>
+  
+ 
+
+<div style="display:flex; justify-content:space-around">
+  
+  <app-movie-item [movie]="wingCommander"></app-movie-item>
+  <app-movie-item [movie]="theRoom"></app-movie-item>
+
+</div>
